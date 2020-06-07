@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  selenium:
+    image: selenium/standalone-chrome:3.141.59
+    volumes:
+    - /dev/shm:/dev/shm
+    ports:
+    - "4444:4444"
