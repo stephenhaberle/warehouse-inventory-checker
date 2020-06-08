@@ -1,8 +1,13 @@
 version: "3.8"
 
 services:
-  selenium:
-    image: selenium/standalone-chrome:3.141.59
+  inventory-checker:
+    build: .
+    image: inventory-checker:0.1
+    environment:
+      START_XVFB: "false" # Set to false because tests are being run in headless mode
+      URL_FILE:
+      INTERVAL:
     volumes:
     - /dev/shm:/dev/shm
     ports:

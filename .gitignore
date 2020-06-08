@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Docker-compose override
+docker-compose.override.yml
+
+# Project specific
+urls.txt
